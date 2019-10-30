@@ -1,0 +1,114 @@
+.best-sellers {
+  header {
+    padding: 100px 0;
+    h2 {
+      font-size: 28px;
+      color: teal(1);
+      letter-spacing: 2.8px;
+      text-align: center;
+      line-height: 43px;
+      margin: 0 0 15px 0;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 20px;
+      color: black(1);
+      text-align: center;
+      line-height: 28px;
+      margin: 0;
+    }
+  }
+  .row {
+    margin-left: -48px;
+    margin-right: -48px;
+  }
+  .single-product {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .product-img-wrap {
+      position: relative;
+      a {
+        position: absolute;
+        bottom: 18px;
+        right: 18px;
+      }
+    }
+    &:hover {
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: blue(0.03);
+        @include transition(.2s);
+        pointer-events: none;
+      }
+    }
+    .product-deets-wrap {
+      padding: 35px 30px 73px 30px;
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: blue(0);
+        @include transition(.2s);
+        pointer-events: none;
+        &.msie {
+          display: none;
+        }
+      }
+      h4 {
+        font-size: 18px;
+        color: greyt(1);
+        letter-spacing: 1.8px;
+        line-height: 36px;
+        text-transform: uppercase;
+      }
+      ul {
+        font-size: 0;
+        li {
+          font-size: 18px;
+          color: lgreyt(1);
+          letter-spacing: 1.8px;
+          line-height: 36px;
+          display: inline-block;
+          &:before {
+            content: "";
+            display: inline-block;
+            height: 4px;
+            width: 4px;
+            background-color: lgreyt(1);
+            @include border-radius(50%);
+            margin: 0 8px 0 8px;
+            vertical-align: middle;
+          }
+          &:first-of-type {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+      span.amount {
+        font-size: 18px;
+        color: teal(1);
+        letter-spacing: 1.8px;
+        line-height: 36px;
+      }
+    }
+    &.three-up {
+      .product-deets-wrap {
+        h4, li, span {
+          font-size: 16px;
+        }
+        h4 {
+          line-height: 26px;
+        }
+      }
+    }
+    text-align: center;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}

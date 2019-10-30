@@ -1,0 +1,39 @@
+// normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
+@import "partials/functions";
+@import "partials/mixins";
+@import "partials/typography";
+@import "partials/nav";
+@import "partials/plott";
+@import "partials/footer";
+@import "partials/single";
+@import "partials/contact";
+@import "partials/fav";
+@import "partials/hero";
+@import "partials/accordian";
+@import "partials/home-cats";
+@import "partials/home-ken";
+@import "partials/home-icons";
+@import "partials/home-products";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+
+	// styles in print.scss
+	@import "partials/print";
+
+}

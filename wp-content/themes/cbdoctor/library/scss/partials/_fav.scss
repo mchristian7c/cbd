@@ -1,0 +1,59 @@
+.simplefavorites-user-count {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  background: teal(1);
+  line-height: 24px;
+  font-size: 15px;
+  color: white(1);
+  display: block;
+  @include border-radius(50%);
+}
+
+a {
+  &.simplefavorite-button {
+    color: blue(.1);
+    font-size: 28px;
+    @include transition(.2s);
+    &:link {
+
+    }
+    &:hover {
+      color: blue(1);
+      @include transition(.2s);
+    }
+    &.active {
+      color: blue(1);
+      @include opacity(1);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1031px) {
+
+
+} // end of media query
+
+@media only screen and (max-width: 1010px) {
+
+
+} // end of media query
+
+@media only screen and (max-width: 768px) {
+
+
+} // end of media query
+
+@media only screen and (max-width: 480px) {
+
+
+
+} // end of media query

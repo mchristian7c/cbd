@@ -1,0 +1,70 @@
+.home header.header {
+  height: 768px;
+  background-image:
+    url('../images/wood_floor.png'),
+    url('../images/hero_mountains.jpg');
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    center bottom,
+    center 50px;
+  background-size:
+    100% 250px,
+    cover;
+  overflow: hidden;
+  position: relative;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+  .hero-img {
+    height: calc(768px - 154px);
+    position: relative;
+    img {
+      height: auto;
+      width: 142%;
+      position: absolute;
+      top: -40px;
+      left: -100px;
+    }
+  }
+  .hero-table {
+    height: calc(768px - 154px);
+    display: table;
+    width: 100%;
+    .hero-cell {
+      // display: table-cell;
+      vertical-align: bottom;
+      font-size: 0;
+      height: calc(768px - 154px);
+      padding-left: 80px;
+      .hero-text {
+        display: table-cell;
+        vertical-align: middle;
+        width: 41.6666666%;
+        padding-bottom: 200px;
+      }
+      .hero-img {
+        display: table-cell;
+        vertical-align: bottom;
+        width: 58.3333333%;
+      }
+    }
+  }
+  .triangle {
+    position: absolute;
+    background-color: teal(.9);
+    height: 360px;
+    width: 360px;
+    bottom: -180px;
+    left: -180px;
+    @include rotate(45deg);
+    text-align: center;
+    h2 {
+      color: white(1);
+      font-size: 22px;
+      letter-spacing: 1.76px;
+      line-height: 28px;
+      margin: 35px 0 0 0;
+      text-transform: uppercase;
+    }
+  }
+}
